@@ -34,17 +34,35 @@
 
             function encriptarMensaje() {
 
-                var frase = document.getElementById('text_in');
-                var frase_encriptada = [];
+                var frase = document.getElementById('text_in').value;
+                let fraseEncriptada = [];
 
+                console.log(typeof(frase))
+                console.log(frase.length)
+                
                 for (var x = 0; x < frase.length; x++) {
-                    console.log(x)
-                }
+                        if (frase[x] == 'a') {
+                            fraseEncriptada.push('ai');
+                        }
+                        else if (frase[x] == 'e') {
+                            fraseEncriptada.push('enter');
+                        }
+                        else if (frase[x] == 'i') {
+                            fraseEncriptada.push('imes');
+                        }
+                        else if (frase[x] == 'o') {
+                            fraseEncriptada.push('ober');
+                        }
+                        else if (frase[x] == 'u') {
+                            fraseEncriptada.push('ufat');
+                        }
+                        else {
+                            fraseEncriptada.push(frase[x]);
+                        }
+                    }
 
-                var withoutCommas = frase_encriptada.toString();
-
-                document.getElementById("text_out").innerHTML = frase.value;
-
+                let result = fraseEncriptada.toString();
+                console.log(result.replaceAll(',', ''))
             }
             var boton_2 = document.getElementById('boton_encriptar');
             boton_2.onclick = encriptarMensaje;
