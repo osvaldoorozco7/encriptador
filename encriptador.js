@@ -1,29 +1,77 @@
-var frase = prompt('Ingrese mensaje a encriptar.');
-var frase_encriptada = [];
+function encriptarMensaje() {
 
-for (var x = 0; x < frase.length; x++) {
-    if (frase[x] == 'a') {
-        frase_encriptada.push('ai')
-    }
-    else if (frase[x] == 'e') {
-        frase_encriptada.push('enter')
-    }
-    else if (frase[x] == 'i') {
-        frase_encriptada.push('imes')
-    }
-    else if (frase[x] == 'o') {
-        frase_encriptada.push('ober')
-    }
-    else if (frase[x] == 'u') {
-        frase_encriptada.push('ufat')
-    }
-    else {
-        frase_encriptada.push(frase[x])
-    }
+    var frase = document.getElementById('text_in').value;
+    let fraseEncriptada = [];
+
+
+    for (var x = 0; x < frase.length; x++) {
+            if (frase[x] == 'a') {
+                fraseEncriptada.push('ai');
+            }
+            else if (frase[x] == 'e') {
+                fraseEncriptada.push('enter');
+            }
+            else if (frase[x] == 'i') {
+                fraseEncriptada.push('imes');
+            }
+            else if (frase[x] == 'o') {
+                fraseEncriptada.push('ober');
+            }
+            else if (frase[x] == 'u') {
+                fraseEncriptada.push('ufat');
+            }
+            else {
+                fraseEncriptada.push(frase[x]);
+            }
+        }
+
+    let result = fraseEncriptada.toString();
+    console.log(result.replaceAll(',', ''))
+
+    document.getElementById("text_out").innerHTML = result.replaceAll(',', '');
 }
 
-var withoutCommas = frase_encriptada.toString();
-var pantallaEncriptar = document.querySelector('text_in');
+function desencriptarMensaje () {
+    var frase = document.getElementById('text_in').value;
+    let fraseDesEncriptada = [];
 
-console.log(pantallaEncriptar)
-console.log(withoutCommas.replaceAll(',',''))
+    console.log(typeof(frase))
+    console.log(frase.length)
+    
+    for (var x = 0; x < frase.length; x++) {
+        if (frase[x] == 'a') {
+            fraseDesEncriptada.push('a');
+            x = x + 1;
+        }
+        else if (frase[x] == 'e') {
+            fraseDesEncriptada.push('e');
+            x = x + 4;
+        }
+        else if (frase[x] == 'i') {
+            fraseDesEncriptada.push('i');
+            x = x + 3;
+        }
+        else if (frase[x] == 'o') {
+            fraseDesEncriptada.push('o');
+            x = x + 3;
+        }
+        else if (frase[x] == 'u') {
+            fraseDesEncriptada.push('u');
+            x = x + 3;
+        }
+        else {
+            fraseDesEncriptada.push(frase[x]);
+        }
+    }
+
+    let result = fraseDesEncriptada.toString();
+    console.log(result.replaceAll(',', ''))
+
+    document.getElementById("text_out").innerHTML = result.replaceAll(',', '');
+}
+
+var boton_1 = document.getElementById('boton_encriptar');
+boton_1.onclick = encriptarMensaje;
+
+var boton_2 = document.getElementById('boton_desencriptar');
+boton_2.onclick = desencriptarMensaje;

@@ -16,57 +16,33 @@
 
         <main>
 
-        <section class="text_areas">
-            <textarea name="text_area_1" id="text_in" cols="90" rows="10"></textarea>
+            <div class="div_logo">
+                <img src="./logo.svg" alt="" class="logo">
+            </div>
 
-            <textarea name="text_area_2" id="text_out" cols="60" rows="10"></textarea>
-        </section>
+            <section class="text_areas">
 
-        <br>
-        <button id="boton_encriptar">Encriptar</button>
-        <button>Desencriptar</button>
+                <div class="">
+                    <textarea name="text_area_1" id="text_in" cols="50" rows="10" class="entrada"></textarea>
+                </div>
+
+                <div class="">
+                    <textarea name="text_area_2" id="text_out" cols="50" rows="10" class="salida"></textarea>
+                </div>
+            </section>
+
+            <section class="botones">
+                <br>
+                <button id="boton_encriptar" class="boton">Encriptar</button>
+                <button id="boton_desencriptar" class="boton">Desencriptar</button>
+            </section>
+
         </main>
 
 
         <footer class="copyright">&copy Code Monkey</footer>
 
-        <script>
 
-            function encriptarMensaje() {
-
-                var frase = document.getElementById('text_in').value;
-                let fraseEncriptada = [];
-
-                console.log(typeof(frase))
-                console.log(frase.length)
-                
-                for (var x = 0; x < frase.length; x++) {
-                        if (frase[x] == 'a') {
-                            fraseEncriptada.push('ai');
-                        }
-                        else if (frase[x] == 'e') {
-                            fraseEncriptada.push('enter');
-                        }
-                        else if (frase[x] == 'i') {
-                            fraseEncriptada.push('imes');
-                        }
-                        else if (frase[x] == 'o') {
-                            fraseEncriptada.push('ober');
-                        }
-                        else if (frase[x] == 'u') {
-                            fraseEncriptada.push('ufat');
-                        }
-                        else {
-                            fraseEncriptada.push(frase[x]);
-                        }
-                    }
-
-                let result = fraseEncriptada.toString();
-                console.log(result.replaceAll(',', ''))
-            }
-            var boton_2 = document.getElementById('boton_encriptar');
-            boton_2.onclick = encriptarMensaje;
-
-        </script>
+        <script src="./encriptador.js"></script>
     </body>
 </html>

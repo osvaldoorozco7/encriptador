@@ -1,9 +1,72 @@
+body {
+    background: #E5E5E5;
+}
+
 header {
     text-align: center;
 }
 
+.div_logo {
+    width: 120px;
+    height: 48px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0;
+    margin: 3rem 0 0 3rem;
+    align-items: center;
+}
+
+.logo {
+    display: auto;
+    position: relative;
+    flex-direction: column;
+}
+
 .text_areas {
+    width: 100%;
     text-align: left;
+    border-width: 1px;
+    border-style: solid;
+    display: block;
+}
+
+.entrada {
+    width: 60%;
+    display: block;
+}
+
+.entrada_texto {
+    width:100%;
+}
+
+.salida {
+    width: 30%;
+}
+
+
+.botones {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.boton {
+    background: #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+
+    color: #FFFFFF;
+    width: 280px;
+    height: 19px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
 }
 
 .copyright {
