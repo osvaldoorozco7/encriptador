@@ -37,7 +37,7 @@ function desencriptarMensaje () {
 
     console.log(typeof(frase))
     console.log(frase.length)
-    
+
     for (var x = 0; x < frase.length; x++) {
         if (frase[x] == 'a') {
             fraseDesEncriptada.push('a');
@@ -70,8 +70,24 @@ function desencriptarMensaje () {
     document.getElementById("text_out").innerHTML = result.replaceAll(',', '');
 }
 
+function copiarTexto() {
+    var textarea = document.getElementById('text_out');
+    textarea.select();
+    navigator.clipboard.writeText(textarea.value);
+}
+
 var boton_1 = document.getElementById('boton_encriptar');
 boton_1.onclick = encriptarMensaje;
 
 var boton_2 = document.getElementById('boton_desencriptar');
 boton_2.onclick = desencriptarMensaje;
+
+var botonCopiar = document.getElementById('copiar');
+botonCopiar.onclick = copiarTexto;
+
+const textarea = document.querySelector("textarea");
+textarea.addEventListener("keyup", e =>{
+    textarea.style.height = "auto";
+    let scHeight = e.target.scrollHeight;
+    textarea.style.height = `${scHeight}px`;
+});
