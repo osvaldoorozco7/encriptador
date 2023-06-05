@@ -1,0 +1,112 @@
+
+    h1 {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.2rem;
+        text-align:center
+    }
+    
+    .div_logo {
+        display: block;
+        width: 120px;
+        height: 48px;
+        margin-bottom: 1rem;
+        text-align: center;
+    
+    }
+    
+    .logo {
+        position: absolute;
+        height: 10px;
+        left: 36.67%;
+        right: 37.43%;
+        top: 0%;
+        bottom: 0%;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .text_areas {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    
+    .entrada {
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+    }
+    
+    .entrada_texto {
+        background: #e6e6e6;
+        font-size: 1.8rem;
+        color: #0A3871;
+        margin-top:1rem;
+        width: 90%;
+        resize: none;
+        border-radius: 0.5rem;
+    }
+    
+    textarea::-webkit-scrollbar{
+        width: 0px;
+    }
+    
+    .salida {
+        width: 30%;
+        padding: 1rem;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .salida_texto {
+        border-radius: 1rem;
+        resize: none;
+        width: 90%;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.8rem;
+        padding: 0.5rem;;
+    }
+
+
+    .botones {
+
+        padding: 1rem;
+    }
+
+    .boton_azul{
+        background-color: #0A3871;
+        color: #E5E5E5;
+    }
+
+    .boton_azul:active {
+        background:#E5E5E5;
+        color:#0A3871;
+    }
+
+    .boton_azul:hover, .boton_blanco:hover {
+        border-color: #c78c19;
+        font-size: 1.1rem;
+    }
+
+    .boton_blanco{
+        background-color: #E5E5E5;
+        color: #0A3871;
+        border: 1px solid #0A3871;
+    }
+
+    .boton_blanco:active {
+        background-color: #0A3871;
+        color:#E5E5E5;
+    }
+
+    /* div button {
+        width: 300px;
+        height: 67px;
+        border-radius: 1rem;
+        display: inline-block;
+        font-size: 1rem;
+    } */
+
+    .copyright {
+        text-align: center;
+    }

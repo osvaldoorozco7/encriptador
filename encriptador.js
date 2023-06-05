@@ -76,6 +76,10 @@ function copiarTexto() {
     navigator.clipboard.writeText(textarea.value);
 }
 
+function borrarTexto () {
+    var clear_textarea = document.getElementById('text_in').value = "";
+}
+
 var boton_1 = document.getElementById('boton_encriptar');
 boton_1.onclick = encriptarMensaje;
 
@@ -84,6 +88,9 @@ boton_2.onclick = desencriptarMensaje;
 
 var botonCopiar = document.getElementById('copiar');
 botonCopiar.onclick = copiarTexto;
+
+var botonBorrar = document.getElementById('borrar');
+botonBorrar.onclick = borrarTexto;
 
 const textarea = document.querySelector("textarea");
 textarea.addEventListener("keyup", e =>{
