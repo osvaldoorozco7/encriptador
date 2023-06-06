@@ -1,147 +1,286 @@
-body {
-    background: #E5E5E5;
+@media screen and (max-width: 320px) {
+    body {
+        background: #E5E5E5;
+    }
+    
+    header {
+        text-align: center;
+    }
+    
+    h1 {
+        font-family: 'Inter', sans-serif;
+        
+        
+    }
+    
+    .condicion{
+        font-family: 'Inter', sans-serif;
+        font-size: 0.7rem;
+        text-align:start;
+        display:inline;
+    }
+    
+    .div_logo {
+        display: block;
+        width: 120px;
+        height: 48px;
+        margin-bottom: 1rem;
+        text-align: center;
+    
+    }
+    
+    .logo {
+        position: absolute;
+        height: 10px;
+        left: 36.67%;
+        right: 37.43%;
+        top: 0%;
+        bottom: 0%;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .text_areas {
+        width: 100%;
+        display: block;
+    }
+
+    .text_area {
+        width: 100%;
+    }
+    /* Entrada */
+    .entrada {
+        padding: 0.5rem;
+    }
+
+    .text_area_container {
+        position: relative;
+    }
+
+    .textarea-container textarea {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    
+    .textarea-container button {
+        position: absolute;
+        top: 19%;
+        right: 2%;
+        padding: 0%;
+    }
+
+    .entrada_texto {
+        width: 100%;
+    }
+    
+    /*Botones*/
+    .botones {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .botones button {
+        width: auto;
+        height: auto;
+        border-radius: 7%;
+    }
+
+    .boton_azul {
+        background-color: #0A3871;
+        color: white;
+        border: 1px solid white;
+    }
+    
+    .boton_azul:active {
+        
+    }
+    
+    .boton_azul:hover, .boton_blanco:hover {
+        border-color: #c78c19;
+        font-size: 1.1rem;
+    }
+    
+    .boton_blanco{
+        background-color: #E5E5E5;
+        color: #0A3871;
+        border: 1px solid #0A3871;
+    }
+    
+    .boton_blanco:active {
+
+    }
+
+    /* Salida */
+
+    .salida {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .salida_texto {
+        height:min-content;
+    }
+
+    .btn-outline-danger {
+        --bs-btn-border-color: none !important;
+    }
+    
+    div button {
+        
+    }
+    
+    .copyright {
+        text-align: center;
+    }
+    
 }
 
-header {
-    text-align: center;
-}
-
-h1 {
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-}
-
-.condicion{
-    font-family: 'Inter', sans-serif;
-    font-size: 0.7rem;
-    text-align:start;
-    display:inline;
-}
-
-.div_logo {
-    display: block;
-    width: 120px;
-    height: 48px;
-    margin-bottom: 1rem;
-    text-align: center;
-
-}
-
-.logo {
-    position: absolute;
-    height: 10px;
-    left: 36.67%;
-    right: 37.43%;
-    top: 0%;
-    bottom: 0%;
-    font-family: 'Inter', sans-serif;
-}
-
-.text_areas {
-    width: 100%;
-    text-align: center;
-    display: block;
-}
-
-.entrada {
-    width: 50%;
-    display: inline-block;
-    text-align: center;
-    vertical-align: top;
-    position: relative;
-}
-
-.textarea-container {
-    position: relative;
-}
-
-.textarea-container textarea {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-.textarea-container button {
-    position: absolute;
-    top: 5px;
-    right: 1%;
-    padding: 0%;
-}
-
-.entrada_texto {
-    background: #e6e6e6;
-    font-size: 1.8rem;
-    color: #0A3871;
-    width: 90%;
-    resize: none;
-    border-radius: 0.5rem;
-    padding-right: 10%;
-}
-
-textarea::-webkit-scrollbar{
-    width: 0px;
-}
-
-.salida {
-    width: 30%;
-    display: inline-block;
-    text-align: center;
-}
-
-.salida_texto {
-    border-radius: 1rem;
-    resize: none;
-    width: 90%;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.8rem;
-}
-
-
-.botones {
-    padding: 1rem;
-}
-
-.boton_azul{
-    background-color: #0A3871;
-    color: #E5E5E5;
-    width: 15rem;
-    height: 67px;
-}
-
-.boton_azul:active {
-    background:#E5E5E5;
-    color:#0A3871;
-}
-
-.boton_azul:hover, .boton_blanco:hover {
-    border-color: #c78c19;
-    font-size: 1.1rem;
-}
-
-.boton_blanco{
-    background-color: #E5E5E5;
-    color: #0A3871;
-    border: 1px solid #0A3871;
-    width: 15rem;
-    height: 67px;
-}
-
-.boton_blanco:active {
-    background-color: #0A3871;
-    color:#E5E5E5;
-}
-
-.x_logo {
-    height: 2rem;
-    color: red;
-}
-
-div button {
-    border-radius: 1rem;
-    display: inline-block;
-    font-size: 1rem;
-}
-
-.copyright {
-    text-align: center;
-}
+/*@media screen {
+    body {
+        background: #E5E5E5;
+    }
+    
+    header {
+        text-align: center;
+    }
+    
+    h1 {
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+    }
+    
+    .condicion{
+        font-family: 'Inter', sans-serif;
+        font-size: 0.7rem;
+        text-align:start;
+        display:inline;
+    }
+    
+    .div_logo {
+        display: block;
+        width: 120px;
+        height: 48px;
+        margin-bottom: 1rem;
+        text-align: center;
+    
+    }
+    
+    .logo {
+        position: absolute;
+        height: 10px;
+        left: 36.67%;
+        right: 37.43%;
+        top: 0%;
+        bottom: 0%;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .text_areas {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    
+    .entrada {
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        position: relative;
+    }
+    
+    .textarea-container {
+        position: relative;
+    }
+    
+    .textarea-container textarea {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    
+    .textarea-container button {
+        position: absolute;
+        top: 5px;
+        right: 1%;
+        padding: 0%;
+    }
+    
+    .entrada_texto {
+        background: #e6e6e6;
+        font-size: 1.8rem;
+        color: #0A3871;
+        width: 90%;
+        resize: none;
+        border-radius: 0.5rem;
+        padding-right: 10%;
+    }
+    
+    textarea::-webkit-scrollbar{
+        width: 0px;
+    }
+    
+    .salida {
+        width: 30%;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .salida_texto {
+        border-radius: 1rem;
+        resize: none;
+        width: 90%;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.8rem;
+    }
+    
+    
+    .botones {
+        padding: 1rem;
+    }
+    
+    .boton_azul{
+        background-color: #0A3871;
+        color: #E5E5E5;
+        width: 15rem;
+        height: 67px;
+    }
+    
+    .boton_azul:active {
+        background:#E5E5E5;
+        color:#0A3871;
+    }
+    
+    .boton_azul:hover, .boton_blanco:hover {
+        border-color: #c78c19;
+        font-size: 1.1rem;
+    }
+    
+    .boton_blanco{
+        background-color: #E5E5E5;
+        color: #0A3871;
+        border: 1px solid #0A3871;
+        width: 15rem;
+        height: 67px;
+    }
+    
+    .boton_blanco:active {
+        background-color: #0A3871;
+        color:#E5E5E5;
+    }
+    
+    .x_logo {
+        height: 2rem;
+        color: red;
+    }
+    
+    div button {
+        border-radius: 1rem;
+        display: inline-block;
+        font-size: 1rem;
+    }
+    
+    .copyright {
+        text-align: center;
+    }
+}/*
