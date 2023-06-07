@@ -98,3 +98,10 @@ textarea.addEventListener("keyup", e =>{
     let scHeight = e.target.scrollHeight;
     textarea.style.height = `${scHeight}px`;
 });
+
+const textarea_2 = document.querySelector(".salida_texto");
+textarea_2.addEventListener("keyup", a => {
+    textarea_2.style.height = "auto";
+    let scHeight2 = a.target.scrollHeight;
+    textarea_2.style.height = `${scHeight2}px`;
+})

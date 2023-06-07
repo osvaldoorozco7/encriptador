@@ -1,34 +1,34 @@
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
     body {
         background: #E5E5E5;
     }
-    
+
     header {
         text-align: center;
     }
-    
+
     h1 {
         font-family: 'Inter', sans-serif;
-        
-        
+
+
     }
-    
+
     .condicion{
         font-family: 'Inter', sans-serif;
         font-size: 0.7rem;
         text-align:start;
         display:inline;
     }
-    
+
     .div_logo {
         display: block;
         width: 120px;
         height: 48px;
         margin-bottom: 1rem;
         text-align: center;
-    
+
     }
-    
+
     .logo {
         position: absolute;
         height: 10px;
@@ -38,7 +38,7 @@
         bottom: 0%;
         font-family: 'Inter', sans-serif;
     }
-    
+
     .text_areas {
         width: 100%;
         display: block;
@@ -61,10 +61,10 @@
         height: 100%;
         box-sizing: border-box;
     }
-    
+
     .textarea-container button {
         position: absolute;
-        top: 19%;
+        top: 20%;
         right: 2%;
         padding: 0%;
     }
@@ -72,7 +72,7 @@
     .entrada_texto {
         width: 100%;
     }
-    
+
     /*Botones*/
     .botones {
         display: inline-block;
@@ -90,22 +90,22 @@
         color: white;
         border: 1px solid white;
     }
-    
+
     .boton_azul:active {
-        
+
     }
-    
+
     .boton_azul:hover, .boton_blanco:hover {
         border-color: #c78c19;
         font-size: 1.1rem;
     }
-    
+
     .boton_blanco{
         background-color: #E5E5E5;
         color: #0A3871;
         border: 1px solid #0A3871;
     }
-    
+
     .boton_blanco:active {
 
     }
@@ -118,7 +118,7 @@
     }
 
     .salida_texto {
-        height:min-content;
+        height: auto;
     }
 
     .btn-outline-danger {
@@ -135,7 +135,7 @@
     
 }
 
-/*@media screen {
+@media screen and (min-width: 426px) {
     body {
         background: #E5E5E5;
     }
@@ -283,4 +283,4 @@
     .copyright {
         text-align: center;
     }
-}/*
+}
