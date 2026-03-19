@@ -31,7 +31,7 @@ h1 {
 
 .entrada_texto {
     background: #e6e6e6;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #0A3871;
     margin-top:1rem;
     width: 100%;
@@ -62,7 +62,7 @@ textarea::-webkit-scrollbar{
 
 .salida_texto {
     border-radius: 1rem;
-    min-height: 35rem;
+    min-height: 30rem;
     resize: none;
     width: 90%;
     font-family: 'Inter', sans-serif;
@@ -88,4 +88,36 @@ textarea::-webkit-scrollbar{
 
 .copyright {
     text-align: center;
+}
+
+@media screen and (max-width: 426px) {
+
+    .text_areas {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    }
+
+    .entrada {
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+
+    .entrada_texto {
+        min-height: 10rem;
+    }
+
+    .salida {
+        width: 100%;
+    }
+
+    .salida_texto {
+    width: 100%;
+    border-radius: 1rem;
+    min-height: 10rem;
+    }
+
+    .condicion {
+        padding: 1rem 0;
+    }
 }
