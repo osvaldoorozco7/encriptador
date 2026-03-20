@@ -135,7 +135,7 @@ textarea::-webkit-scrollbar{
     }
 
     .entrada_texto {
-        min-height: 20rem;
+        min-height: 10rem;
     }
 
     .salida {
