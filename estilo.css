@@ -1,19 +1,19 @@
+@font-face {
+    font-family: "MiFuente";
+    src: url("./fonts/font.ttf") format("truetype");
+}
+
 .title-container {
     height: 5rem;
     text-align: center;
     justify-content: center;
     display: flex;
+    font-family: 'MiFuente', sans-serif !important;
 }
 
-h1 {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.2rem;
-
-}
-
-    
-.logo {
-    height: 4rem;
+.header-container > p {
+    margin-top: 2rem;
+    font-size: 3rem;
 }
     
 .text_areas {
@@ -97,6 +97,11 @@ textarea::-webkit-scrollbar{
     display:flex;
     flex-direction: column;
     }
+
+    .header-container > p {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
 
     .entrada {
         width: 100%;
