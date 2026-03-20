@@ -121,3 +121,24 @@ textarea::-webkit-scrollbar{
         padding: 1rem 0;
     }
 }
+
+
+@media screen and (max-width: 1080px) {
+    .text_areas {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .entrada {
+        width: 100%;
+    }
+
+    .entrada_texto {
+        min-height: 20rem;
+    }
+
+    .salida {
+        width: 100%;
+    }
+}
